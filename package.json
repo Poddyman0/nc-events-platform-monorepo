@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "cd BE && npm install && npm start",
-    "start-frontend": "cd FE && serve -s"
+    "start-backend": "cd BE && npm install && node app.js",
+    "start-frontend": "cd FE && xdg-open index.html"
   },
   "author": "",
   "license": "ISC",
