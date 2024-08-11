@@ -427,7 +427,7 @@ function createEventForm() {
         const startDateTimeAndEndTimeValidVar = startDateTimeAndEndTimeValid()
 
 
-        if (hasEventName && hasEventDescription && hasStartDate && hasEndDate && hasEventEndTime && hasEventStartTime && hasHouseNumber && hasStreet && hasCity && hasCountry && hasCounty && hasEventTicketPrice && hasEventTicketAmount && startDateTimeAndEndTimeValidVar && hasImage && pricing !== "") {
+        if (hasPostCode && hasEventName && hasEventDescription && hasStartDate && hasEndDate && hasEventEndTime && hasEventStartTime && hasHouseNumber && hasStreet && hasCity && hasCountry && hasCounty && hasEventTicketPrice && hasEventTicketAmount && startDateTimeAndEndTimeValidVar && hasImage && pricing !== "") {
             console.log("in request")
             createEvent ()
             createdEventFeedback.style.display = "block"

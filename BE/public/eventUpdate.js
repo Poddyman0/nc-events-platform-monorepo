@@ -724,7 +724,7 @@ function createEventForm() {
             
             
             
-                    if (hasEventName && hasEventDescription && hasStartDate && hasEndDate && hasEventEndTime && hasEventStartTime && hasHouseNumber && hasStreet && hasCity && hasCountry && hasCounty && hasEventTicketPrice && hasEventTicketAmount && pricing !=="" && eventImage.value !== "" && startDateTimeAndEndTimeValidVar) {
+                    if (hasPostCode && hasEventName && hasEventDescription && hasStartDate && hasEndDate && hasEventEndTime && hasEventStartTime && hasHouseNumber && hasStreet && hasCity && hasCountry && hasCounty && hasEventTicketPrice && hasEventTicketAmount && pricing !=="" && eventImage.value !== "" && startDateTimeAndEndTimeValidVar) {
                         updateEvent ()
             
                         function updateEvent () {
