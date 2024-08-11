@@ -1,0 +1,48 @@
+
+
+
+
+front end:
+- move google callendar to profile/ remember success and failure responses
+- must all go to same repo and domain (if combined, then add to google hosted versiojn).
+- change fetch requests to use correct params or body in back end.
+
+- read me documentation.
+- email: mitchell.e.george.2991@gmail.com
+- make user - postcode noit working
+
+
+
+
+test user:
+internal: 
+email: adam.apple@outlook.com
+password: Asdf5678%
+id: 662b78f7227520c132110592
+
+external:
+email: eve.electra@yahoo.com
+password: Tyui1234!
+id: 662b78f7227520c132110597
+
+
+test event:
+id: 662b78f7227520c1321105a1
+
+
+
+/// done ///
+railway mongodb:
+mongodb://mongo:DXuIYjYEGOKOtKWdvrscuFMQnEXicDwR@viaduct.proxy.rlwy.net:16106
+mongo db: 
+user: nc-consultancy-be-mongo-db-login
+pass: nc-consultancy-be-mongo-db-login
+database name: nc_consultancy_be_mongodb
+connection string: mongodb+srv://nc-consultancy-be-mongo-db-login:nc-consultancy-be-mongo-db-login@cluster0.rgsbbcg.mongodb.net/nc_consultancy_be_mongodb?retryWrites=true&w=majority&appName=Cluster0
+connection string alt: mongodb+srv://nc-consultancy-be-mongo-db-login:nc-consultancy-be-mongo-db-login@cluster0.rgsbbcg.mongodb.net/nc_consultancy_be_mongodb
+
+
+
+
+
+

@@ -1,0 +1,246 @@
+.footer-container {
+    background-color: rgb(6, 112, 151);
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.phone-email-container {
+    display: flex;
+    justify-content: left;
+}
+.footer-icon {
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+.phone-email-container {
+    display: flex;
+    justify-content: left;
+}
+
+.profile-container {
+    padding: 7%;
+    justify-content: space-around;
+}
+
+#not-signed-in-msg {
+    padding: 70px;
+
+}
+
+.profileCard {
+    padding: 1%;
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+#profile-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-button {
+    width: 30%;
+}
+
+.cartStyle {
+    padding: 1%;
+    background-color: rgb(186, 255, 231);
+    margin: 10px;
+}
+
+.cartCol {
+    padding: 10px;
+}
+
+#cart-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-button {
+    width: 40%;
+}
+
+.cart-controlls-container {
+    padding: 1%;
+    background-color: rgb(147, 207, 188);
+}
+
+.cartCardStyle {
+    background-color: rgb(155, 228, 205);
+}
+
+#cart-total {
+    font-size: 25px;
+}
+
+#remove-from-cart-btn {
+    width: 100%;
+}
+
+#invites-container {
+    background-color: beige;
+    padding: 1%;
+    margin: 10px;
+}
+
+.invitesCardStyle {
+    background-color: rgb(234, 234, 188);
+}
+
+.invitesButtonsStyle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.invitesButton {
+    width: 50%;
+}
+
+.invitesControllsStyle {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: rgb(211, 211, 135);
+
+}
+
+#events-attending-container {
+    padding: 1%;
+    background-color: rgb(253, 202, 228);
+    margin: 10px;
+}
+
+.attendingCardStyle {
+    background-color: rgb(240, 180, 210);
+}
+
+.cartTotalDisplay {
+    padding: 5px;
+}
+/*laptop*/
+@media (min-width: 1180px) { 
+    .footer-left {
+        width: 48%; /* 33.33% width for each item */
+        flex-basis: 48%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+    }
+    .footer-right {
+        width: 48%; /* 33.33% width for each item */
+        flex-basis: 48%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+    }
+    .footer-title {
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+    .footer-text {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 22px;
+    }
+    .footer-right {
+        width: 48%; /* 33.33% width for each item */
+        flex-basis: 48%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+    }
+    .footer-picture {
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+
+}
+/*tablet*/
+@media (max-width: 1180px) {
+    .footer-left {
+        width: 48%; /* 33.33% width for each item */
+        flex-basis: 48%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+    }
+    .footer-right {
+        width: 48%; /* 33.33% width for each item */
+        flex-basis: 48%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+    }
+    .footer-title {
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+    .footer-text {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+    .footer-right {
+        width: 48%; /* 33.33% width for each item */
+        flex-basis: 48%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+    }
+    .footer-picture {
+        background-color: white;
+        width: 100%;
+        height: auto;
+    }
+
+}
+/*phone*/
+@media (max-width: 855px) {  
+    .footer-left {
+        width: 99%; /* 33.33% width for each item */
+        flex-basis: 99%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+        margin: 1%; 
+        font-size: 50px;
+    }
+    .footer-right {
+        width: 99%; /* 33.33% width for each item */
+        flex-basis: 99%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+        margin: 1%
+
+    }
+    .footer-title {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+    .footer-text {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 30px;
+    }
+    .footer-icon-container {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .footer-right {
+        width: 99%; /* 33.33% width for each item */
+        flex-basis: 99%; /* Set initial main size to achieve equal width */
+        box-sizing: border-box;
+        margin: 1%
+
+    }
+    .footer-picture {
+        background-color: white;
+        position: absolute;
+        bottom: 100;
+        left: 0;
+        width: 100vw;
+        height: auto;
+    }
+}
