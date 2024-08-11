@@ -174,23 +174,26 @@ function isSignedIn () {
         addToCartContainer.style.display = "none";
         addToCartBtn.style.display = "none";
         notSignedInCartMSG.style.display= "block";
+        updateEventBTN.style.display = "none";
+        deleteEventBTN.style.display = "none";
     } else if (userIDSignedIn !== null || userTokenSignedIn !== null) {
         addToCartContainer.style.display = "block";
         addToCartBtn.style.display = "block";
         notSignedInCartMSG.style.display= "none";
-    }
-    if (userRoleSignedIn !== null) {
-        if (userRoleSignedIn === "internal") {
-            updateEventBTN.style.display = "block";
-            deleteEventBTN.style.display = "block";
-        } else if (userRoleSignedIn === "external") {
+        if (userRoleSignedIn !== null) {
+            if (userRoleSignedIn === "internal") {
+                updateEventBTN.style.display = "block";
+                deleteEventBTN.style.display = "block";
+            } else if (userRoleSignedIn === "external") {
+                updateEventBTN.style.display = "none";
+                deleteEventBTN.style.display = "none";
+        
+            }
+        } else if (userRoleSignedIn === null) {
             updateEventBTN.style.display = "none";
             deleteEventBTN.style.display = "none";
-    
         }
-    } else if (userRoleSignedIn === null) {
-        updateEventBTN.style.display = "none";
-        deleteEventBTN.style.display = "none";
+    
     }
 
 }
