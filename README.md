@@ -1,1 +1,0 @@
-# nc-events-platform-monorepo
