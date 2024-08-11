@@ -666,6 +666,7 @@ exports.createAInviteeForAEvent = [
 
 exports.deleteAInviteeForAEvent  = asyncHandler(async (req, res, next) => {
     const eventToDelete = await Event.findById(req.params.eventID).exec()
+
     let inviteeIDString = `${req.params.inviteeID}`
     console.log("inviteeIDString", inviteeIDString)
 

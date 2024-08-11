@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken')
 const passport = require("passport");
 const bcrypt = require('bcryptjs');
 const he = require('he');
+const Event = require("../models/event");
 
 //TO DO:
 // - signIn (inc errors)
@@ -162,6 +163,12 @@ exports.profile_create_post = [
 // POST request to delete a profile
 exports.profile_delete_post = asyncHandler(async (req, res, next) => {
     const aProfileExists = await Profile.findById(req.params.id)
+
+    //    const aProfile = await Profile.find({ _id: req.params.id}).exec();
+
+
+
+    //
     let errors = []
     let profileIDToDelete = req.params.id
     console.log("PE", aProfileExists)
@@ -174,8 +181,14 @@ exports.profile_delete_post = asyncHandler(async (req, res, next) => {
         })
     } else {
         const aProfile = await Profile.findByIdAndDelete(req.params.id).exec();
+        const profileIDInEventOrganiserDelete = await Event.deleteMany({ eventOrganiser: req.params.id }).exec();
+        const profileIDInEventInvitedUpdate = await Event.updateMany({ eventInvited: req.params.id }, { $pull: { eventInvited: req.params.id } }).exec();
+        const profileIDInEventAttendeeUpdate = await Event.updateMany({ eventAtendees: req.params.id },{ $pull: { eventAtendees: req.params.id } }).exec();
         res.json({
             profile: aProfile,
+            eventOrganiserDeleted: profileIDInEventOrganiserDelete,
+            eventInvitedProfileDeleted: profileIDInEventInvitedUpdate,
+            eventAtendeeProfileDeleted: profileIDInEventAttendeeUpdate, 
             msg: "Profile deleted successfully" 
         })
     }
