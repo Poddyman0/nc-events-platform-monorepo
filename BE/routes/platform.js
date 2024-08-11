@@ -95,5 +95,9 @@ router.post("/event/delete/:eventID/invitee/:inviteeID", jwtAuth,
 event_controller.deleteAInviteeForAEvent
 )
 
+app.get('/index.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'FE', 'index.html'));
+  });  
+
 
 module.exports = router;
