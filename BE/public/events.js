@@ -41,6 +41,7 @@ function loadEvents() {
                 .then(response => {
                 eventsLoading.style.display = "none"
                 eventsLoading.innerHTML = ""
+                console.log(response.events)
                 response.events.forEach(aEvent => {
                     function getDateFromISOString(isoString) {
                         const date = new Date(isoString);
