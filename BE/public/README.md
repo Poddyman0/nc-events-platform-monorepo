@@ -43,19 +43,6 @@
   </li>
 </ul>
 
-<p><strong>Non-Functional Requirements:</strong></p>
-<ul>
-  <li><strong>Documentation:</strong> Provided comprehensive documentation detailing the project setup, hosting information, and local running instructions.</li>
-  <li><strong>Performance:</strong> Ensured the application effectively communicates errors and provides clear guidance on how to create or sign up for events.</li>
-</ul>
-
-<p><strong>Possible Extensions:</strong></p>
-<ul>
-  <li><strong>Email Confirmation:</strong> Adding functionality to send confirmation emails upon booking an event.</li>
-  <li><strong>Social Media Integration:</strong> Allowing users to share events on social media platforms.</li>
-  <li><strong>Advanced Authentication:</strong> Implementing login options using Google or other social media accounts.</li>
-  <li><strong>Website and Mobile App:</strong> Developing both a website and a mobile app version for broader accessibility.</li>
-</ul>
 
 <p><strong>Hosting and Deployment:</strong></p>
 <ul>
